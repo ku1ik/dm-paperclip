@@ -22,8 +22,7 @@ Merb.class_eval do
   def self.root
     "#{ROOT}"
   end
-  def self.env(str=nil)
-    ENV['RAILS_ENV'] = str if str
+  def self.env
     ENV['RAILS_ENV']
   end
 end
